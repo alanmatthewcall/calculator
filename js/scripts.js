@@ -17,6 +17,8 @@ $(document).ready(function() {
     const number1 = parseInt($("#add1").val());
     const number2 = parseInt($("#add2").val());
     const result = add(number1, number2);
+    const flavor = $("input:radio[name=flavor]:checked").val();
+    
     $("#output").text(result);
   });
 });
